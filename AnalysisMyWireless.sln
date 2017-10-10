@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "AnalysisMyWireless", "AnalysisMyWireless\AnalysisMyWireless.dwproj", "{9F58104B-B879-453A-9DDD-CFFD5F35B263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F58104B-B879-453A-9DDD-CFFD5F35B263}.Development|Default.ActiveCfg = Development
+		{9F58104B-B879-453A-9DDD-CFFD5F35B263}.Development|Default.Build.0 = Development
+		{9F58104B-B879-453A-9DDD-CFFD5F35B263}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
