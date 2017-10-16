@@ -1,0 +1,108 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e71e71dc-181e-4db1-8380-f71fbdd31064" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Time</ID>
+  <Name>Time</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Year]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="Range"&gt;&lt;Basis&gt;Member&lt;/Basis&gt;&lt;From&gt;[Time].[Year].&amp;amp;[2016-01-01T00:00:00]&lt;/From&gt;&lt;To&gt;[Time].[Year].&amp;amp;[2017-01-01T00:00:00]&lt;/To&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="11fd3f09-4bc2-4b2e-b6e4-ae86d971168f">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>My Wireless Datamart</CubeID>
+    <CubeDimensionID>Time</CubeDimensionID>
+    <Filter>( SELECT ( [Time].[Year].&amp;[2016-01-01T00:00:00] : [Time].[Year].&amp;[2017-01-01T00:00:00] ) ON COLUMNS FROM [My Wireless Datamart])</Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b778f36f-b598-493f-88dd-33f822cd76c9">
+      <ID>Week</ID>
+      <Name>Week</Name>
+      <IsKey>true</IsKey>
+      <Type>Date</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7d1c6eff-cc51-40d4-b3e3-3aabdc9b88c7">
+        <CubeID>My Wireless Datamart</CubeID>
+        <CubeDimensionID>Time</CubeDimensionID>
+        <AttributeID>Week</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key Time</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="49e81d70-4215-40dc-a76f-8ce2029c2a6a">
+      <ID>Sellout Qty</ID>
+      <Name>Sellout Qty</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="29782ede-788c-4c8e-a5cc-52c5308b968d">
+        <MeasureID>Sellout Qty</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="b5ecba68-eae9-49e6-9226-435dae1d28c8">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Time_Series</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="dcdebf64-d854-406d-9971-467f23c87f4b">
+          <ID>Week</ID>
+          <Name>Week</Name>
+          <SourceColumnID>Week</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="af6dc55d-621a-454f-a533-b11475e80db2">
+          <ID>Sellout Qty</ID>
+          <Name>Sellout Qty</Name>
+          <SourceColumnID>Sellout Qty</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

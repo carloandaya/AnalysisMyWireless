@@ -1,0 +1,125 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="11e831f4-2266-448e-a527-5a8a33ccb977" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Time 1</ID>
+  <Name>Time 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Date]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="MDX"&gt;&lt;Text&gt;[Time].[PK Date].&amp;amp;[2015-01-01T00:00:00] : 
+strtomember('[Time].[PK Date].&amp;amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]')&lt;/Text&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Device].[Manufacturers_Id]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="EqualTo"&gt;&lt;Members&gt;&lt;Member&gt;&lt;MemberUniqueName&gt;[Device].[Manufacturers_Id].&amp;amp;[APL]&lt;/MemberUniqueName&gt;&lt;/Member&gt;&lt;/Members&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="09e77659-78a9-4505-9402-f1f74225fbcb">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>My Wireless Datamart</CubeID>
+    <CubeDimensionID>Time</CubeDimensionID>
+    <Filter>( SELECT ( { [Device].[Manufacturers_Id].&amp;[APL] } ) ON COLUMNS FROM ( SELECT ( [Time].[PK Date].&amp;[2015-01-01T00:00:00] : 
+strtomember('[Time].[PK Date].&amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]') ) ON COLUMNS FROM [My Wireless Datamart]))</Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="72aab407-dc3f-4e13-92df-992d384dc015">
+      <ID>Sales Qty</ID>
+      <Name>Sales Qty</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="eb50e179-1015-4173-b3c0-f83313fe97a6">
+        <MeasureID>Sales Qty</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="dcbb8e5d-a929-441b-b39a-fb37a3daae35">
+      <ID>Week</ID>
+      <Name>Week</Name>
+      <IsKey>true</IsKey>
+      <Type>Date</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="5c2a5a52-9387-4ecf-975a-baed67477562">
+        <CubeID>My Wireless Datamart</CubeID>
+        <CubeDimensionID>Time</CubeDimensionID>
+        <AttributeID>Week</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key Time</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="035107aa-8b49-43aa-bbac-e00b8e76b2c2">
+      <ID>Sales Cost</ID>
+      <Name>Sales Cost</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="856f576f-8902-42d2-b8de-8225f5b7a4ea">
+        <MeasureID>Sales Cost</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="b35f469d-9e5a-4dc6-98be-abecb2c5b1be">
+      <ID>Time 1</ID>
+      <Name>Time 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Time_Series</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="00622120-2650-4a52-819f-20204e59b60d">
+          <ID>Week</ID>
+          <Name>Week</Name>
+          <SourceColumnID>Week</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="1c6c972d-618d-4206-9e5c-1ec9d1f06124">
+          <ID>Sales Cost</ID>
+          <Name>Sales Cost</Name>
+          <SourceColumnID>Sales Cost</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="9b2ac427-c454-4cb8-be38-8fce79e84b7f">
+          <ID>Sales Qty</ID>
+          <Name>Sales Qty</Name>
+          <SourceColumnID>Sales Qty</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

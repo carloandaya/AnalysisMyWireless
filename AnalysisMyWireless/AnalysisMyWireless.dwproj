@@ -6,10 +6,120 @@
     <Name>AnalysisMyWireless.database</Name>
     <FullPath>AnalysisMyWireless.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>My Wireless Datamart.cube</Name>
+      <FullPath>My Wireless Datamart.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>My Wireless Datamart.partitions</Name>
+          <FullPath>My Wireless Datamart.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Device.dim</Name>
+      <FullPath>Device.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Locations.dim</Name>
+      <FullPath>Locations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>My Wireless Datamart.ds</Name>
+      <FullPath>My Wireless Datamart.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Inventory Database.ds</Name>
+      <FullPath>Inventory Database.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>My Wireless Datamart.dsv</Name>
+      <FullPath>My Wireless Datamart.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product Detail Report.dsv</Name>
+      <FullPath>Product Detail Report.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Time.dmm</Name>
+      <FullPath>Time.dmm</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time 1.dmm</Name>
+      <FullPath>Time 1.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>My Wireless Datamart</Id>
+            <Name>My Wireless Datamart</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=MyWirelessDatamart</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Inventory Database</Id>
+            <Name>Inventory Database</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=InventoryDatabase</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>My Wireless Datamart</Id>
+            <Name>My Wireless Datamart</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Inventory Database</Id>
+            <Name>Inventory Database</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>My Wireless Datamart</Id>
+            <Name>My Wireless Datamart</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=MyWirelessDatamart</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Inventory Database</Id>
+            <Name>Inventory Database</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=InventoryDatabase</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>My Wireless Datamart</Id>
+            <Name>My Wireless Datamart</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Inventory Database</Id>
+            <Name>Inventory Database</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
