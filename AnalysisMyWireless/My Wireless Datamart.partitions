@@ -21,5 +21,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>Device Receive Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="78652546-e374-4254-8e92-4e42b9870026">
+          <ID>Device Receive Fact</ID>
+          <Name>Device Receive Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="fa1906f5-1587-455d-b80f-e9353ff18c68">
+            <DataSourceViewID>My Wireless Datamart</DataSourceViewID>
+            <TableID>dbo_DeviceReceiveFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>
