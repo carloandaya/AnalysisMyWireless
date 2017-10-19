@@ -1,4 +1,4 @@
-﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e71e71dc-181e-4db1-8380-f71fbdd31064" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d045c9c-4550-4ee2-b75e-f0d1e5acea5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Time</ID>
   <Name>Time</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -6,7 +6,7 @@
   <Annotations>
     <Annotation>
       <Name>MDXFilterComponent</Name>
-      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Year]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="Range"&gt;&lt;Basis&gt;Member&lt;/Basis&gt;&lt;From&gt;[Time].[Year].&amp;amp;[2016-01-01T00:00:00]&lt;/From&gt;&lt;To&gt;[Time].[Year].&amp;amp;[2017-01-01T00:00:00]&lt;/To&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Date]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="MDX"&gt;&lt;Text&gt;[Time].[Date_Series].&amp;amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]')&lt;/Text&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -46,38 +46,47 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="11fd3f09-4bc2-4b2e-b6e4-ae86d971168f">
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="21ea9def-b96b-4172-8d78-72482d9afb8c">
     <DataSourceID>.</DataSourceID>
     <CubeID>My Wireless Datamart</CubeID>
     <CubeDimensionID>Time</CubeDimensionID>
-    <Filter>( SELECT ( [Time].[Year].&amp;[2016-01-01T00:00:00] : [Time].[Year].&amp;[2017-01-01T00:00:00] ) ON COLUMNS FROM [My Wireless Datamart])</Filter>
+    <Filter>( SELECT ( [Time].[Date_Series].&amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]') ) ON COLUMNS FROM [My Wireless Datamart])</Filter>
   </Source>
   <Columns>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b778f36f-b598-493f-88dd-33f822cd76c9">
-      <ID>Week</ID>
-      <Name>Week</Name>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c4e35f68-e2a1-48d4-a6a3-6cea7a32e47d">
+      <ID>Date_Series</ID>
+      <Name>Date_Series</Name>
       <IsKey>true</IsKey>
       <Type>Date</Type>
-      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="7d1c6eff-cc51-40d4-b3e3-3aabdc9b88c7">
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="cbff4607-cb7b-426e-aa57-6a50235dd648">
         <CubeID>My Wireless Datamart</CubeID>
         <CubeDimensionID>Time</CubeDimensionID>
-        <AttributeID>Week</AttributeID>
+        <AttributeID>Date_Series</AttributeID>
         <Type>All</Type>
       </Source>
       <Content>Key Time</Content>
     </Column>
-    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="49e81d70-4215-40dc-a76f-8ce2029c2a6a">
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4c4ae241-907c-4df2-b099-2fb4ebe18fa9">
+      <ID>ReceiveQty</ID>
+      <Name>ReceiveQty</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="62829dff-ee4f-4fd1-b16f-d4399044cdae">
+        <MeasureID>Quantity</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="aeca2585-07f9-43a8-bece-b28b77eac242">
       <ID>Sellout Qty</ID>
       <Name>Sellout Qty</Name>
       <Type>Long</Type>
-      <Source xsi:type="MeasureBinding" dwd:design-time-name="29782ede-788c-4c8e-a5cc-52c5308b968d">
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="d98d45c2-2925-4e22-a417-8a5e575626ba">
         <MeasureID>Sellout Qty</MeasureID>
       </Source>
       <Content>Continuous</Content>
     </Column>
   </Columns>
   <MiningModels>
-    <MiningModel dwd:design-time-name="b5ecba68-eae9-49e6-9226-435dae1d28c8">
+    <MiningModel dwd:design-time-name="6c78a7e7-0df2-42c8-82d2-e6623837cd5e">
       <ID>Time</ID>
       <Name>Time</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -86,13 +95,22 @@
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Time_Series</Algorithm>
       <Columns>
-        <Column dwd:design-time-name="dcdebf64-d854-406d-9971-467f23c87f4b">
-          <ID>Week</ID>
-          <Name>Week</Name>
-          <SourceColumnID>Week</SourceColumnID>
+        <Column dwd:design-time-name="e47159ea-a4e1-4a4a-b40c-5a238990514a">
+          <ID>Date_Series</ID>
+          <Name>Date_Series</Name>
+          <SourceColumnID>Date_Series</SourceColumnID>
           <Usage>Key</Usage>
         </Column>
-        <Column dwd:design-time-name="af6dc55d-621a-454f-a533-b11475e80db2">
+        <Column dwd:design-time-name="67390fdf-b3b0-412a-9c91-f5faae4895ef">
+          <ID>ReceiveQty</ID>
+          <Name>ReceiveQty</Name>
+          <SourceColumnID>ReceiveQty</SourceColumnID>
+          <Usage>Predict</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="d53d5e73-b7a0-4aa8-96db-8a16e39a7ed7">
           <ID>Sellout Qty</ID>
           <Name>Sellout Qty</Name>
           <SourceColumnID>Sellout Qty</SourceColumnID>

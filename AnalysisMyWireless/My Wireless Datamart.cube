@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10385" scrolltop="-6390" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="24633" y="16457" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="32" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10385" scrolltop="-9763" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19685" y="21034" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -52,7 +52,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Manufacturers" left="5547" top="5337" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Manufacturers" left="7902" top="8221" logicalid="19" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
             </control>
@@ -81,7 +81,7 @@
               <point x="547" y="10674" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2847" top="5327" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2847" top="7626" logicalid="21" controlid="6" masterid="0" hint1="0" hint2="0" width="5355" height="1384" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -94,9 +94,11 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="10" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="5547" y="5726" />
-              <point x="3147" y="5726" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="10" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7902" y="8610" />
+              <point x="5525" y="8610" />
+              <point x="5525" y="7926" />
+              <point x="3147" y="7926" />
             </connector>
           </ddscontrol>
           <ddscontrol controlprogid="MSDDS.Polyline" left="148" top="1380" logicalid="22" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -148,38 +150,7 @@
               <point x="20" y="11233" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="-6641" top="-503" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="4974" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000a00006e13000088130000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Time" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="-6753" top="3998" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="7600" height="6976" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK_DeviceSalesFact_Time]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="1" sourceattachpoint="1" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="-6354" y="4497" />
-              <point x="-6354" y="7585" />
-              <point x="547" y="7585" />
-              <point x="547" y="10674" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DeviceReceiveFact" left="4048" top="-2963" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="3413" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DeviceReceiveFact" left="5556" top="-3651" logicalid="25" controlid="10" masterid="0" hint1="0" hint2="0" width="3413" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000a0000550d000043110000" />
             </control>
@@ -190,7 +161,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="2348" top="1156" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="2606" height="3623" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2348" top="468" logicalid="26" controlid="11" masterid="0" hint1="0" hint2="0" width="4114" height="4311" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -203,34 +174,14 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="12" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="10" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="2747" y="4279" />
               <point x="2747" y="2868" />
-              <point x="4654" y="2868" />
-              <point x="4654" y="1456" />
+              <point x="6162" y="2868" />
+              <point x="6162" y="768" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="-1967" top="-2704" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="6315" height="3451" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[FK_DeviceReceiveFact_Time]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="12" sourceattachpoint="21" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="-1667" y="347" />
-              <point x="-834" y="347" />
-              <point x="-834" y="-2404" />
-              <point x="4048" y="-2404" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="-4142" top="1156" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="9096" height="7837" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-4142" top="468" logicalid="27" controlid="12" masterid="0" hint1="0" hint2="0" width="11154" height="8525" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -243,11 +194,62 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="12" sourceattachpoint="8" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="10" sourceattachpoint="8" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="-3743" y="8493" />
               <point x="-3743" y="6456" />
-              <point x="4654" y="6456" />
-              <point x="4654" y="1456" />
+              <point x="6712" y="6456" />
+              <point x="6712" y="768" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="Time" left="-6721" top="-8096" logicalid="28" controlid="13" masterid="0" hint1="0" hint2="0" width="4974" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a00006e13000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-2047" top="-4345" logicalid="29" controlid="14" masterid="0" hint1="0" hint2="0" width="7903" height="1553" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="2" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DeviceReceiveFact_Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="10" sourceattachpoint="33" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-1747" y="-3946" />
+              <point x="1574" y="-3946" />
+              <point x="1574" y="-3092" />
+              <point x="5556" y="-3092" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-2433" top="-3595" logicalid="30" controlid="15" masterid="0" hint1="0" hint2="0" width="3280" height="14569" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DeviceSalesFact_Time]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="13" destid="1" sourceattachpoint="17" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="-2034" y="-3096" />
+              <point x="-2034" y="4146" />
+              <point x="547" y="4146" />
+              <point x="547" y="10674" />
             </connector>
           </ddscontrol>
         </dds>
@@ -271,15 +273,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-6390</Value>
+      <Value>-9763</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>-6641</Value>
+      <Value>-6721</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>-2963</Value>
+      <Value>-8096</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -339,74 +341,74 @@
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="66f2368f-83b5-4785-a731-06a556773c0f">
+    <Dimension dwd:design-time-name="fe27bd16-c02a-4538-9e77-be7a97193151">
       <ID>Time</ID>
       <Name>Time</Name>
       <DimensionID>Time</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="715fc13e-2f64-4d8e-a34a-042fecdada65">
-          <AttributeID>PK Date</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="b044b539-d1a2-4d35-805b-87177c9270e4">
-          <AttributeID>Date Name</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="9d9a583b-d9af-4452-8342-5ed233c02d01">
+        <Attribute dwd:design-time-name="fd341e5b-9af2-4b65-a864-55a8cc4938b4">
           <AttributeID>Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="08797bcf-cc80-4430-8f49-c9fd8a6c10ab">
+        <Attribute dwd:design-time-name="26857299-3d86-4e95-9888-9452645dac46">
           <AttributeID>Half Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="12075cef-0a21-46fe-90f0-1287af09d1df">
+        <Attribute dwd:design-time-name="e1661e7d-52eb-4062-bf9d-11290c8a9f35">
           <AttributeID>Quarter</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="12cb84ba-4fb4-4995-832c-ef3d9607486f">
+        <Attribute dwd:design-time-name="cbebb227-01d9-4a9f-921b-95538543476a">
           <AttributeID>Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="89aee4ad-0e39-4ce8-8fdc-fdd3bd10f596">
+        <Attribute dwd:design-time-name="52653f44-7a0d-4814-9400-75997bed624e">
           <AttributeID>Week</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="cc39cee3-2687-4d58-ad17-024e18c4c453">
+        <Attribute dwd:design-time-name="8dcad334-ba31-4f35-80eb-b03c02dbc0f6">
           <AttributeID>Day Of Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d8d05b42-6ae4-4801-80d7-09a8d66c7fe7">
+        <Attribute dwd:design-time-name="d181db71-47d3-4556-a71a-d896c28d15fa">
           <AttributeID>Day Of Half Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b0fe7e30-2b9d-46d3-a7c5-b561c1d3d0d9">
+        <Attribute dwd:design-time-name="74ed9200-f003-4bc4-a529-6ad5b2d93e9b">
           <AttributeID>Day Of Quarter</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9dcbfcbc-a1d5-4d0f-b242-12b3010955b3">
+        <Attribute dwd:design-time-name="1d259c71-62b1-4829-a99c-d078482e8e90">
           <AttributeID>Day Of Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="245bb8d5-69e5-4865-8306-12dab738b646">
+        <Attribute dwd:design-time-name="8285a524-95aa-418d-8bb8-f8edb7ddfe13">
           <AttributeID>Day Of Week</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e62f87dd-0782-4e4d-9ced-c63ed6f9bb47">
+        <Attribute dwd:design-time-name="5b874636-9886-41cc-acdd-937bd5aef495">
           <AttributeID>Week Of Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ec9863ec-56ec-4061-8618-416edf12ff3f">
+        <Attribute dwd:design-time-name="df345e1e-91f6-46b1-8ad1-398c073ddcc3">
           <AttributeID>Month Of Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fae4c78e-dcc3-46fc-a326-5a5423d67760">
+        <Attribute dwd:design-time-name="f5538175-82e1-46c2-ba88-5d506051bb74">
           <AttributeID>Month Of Half Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="aec55aff-38ab-4863-abba-b0fda0213d61">
+        <Attribute dwd:design-time-name="e9b3dbab-0cdb-459f-91b2-c27c6b69e469">
           <AttributeID>Month Of Quarter</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f62beb30-eeb2-462b-9bf3-811bdea4af0c">
+        <Attribute dwd:design-time-name="d761401e-839c-4021-bf09-bfd99f367bad">
           <AttributeID>Quarter Of Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="694a572e-d064-4bc7-84a3-4688b235c5e8">
+        <Attribute dwd:design-time-name="f7660e82-9b65-4335-9288-6aad63940552">
           <AttributeID>Quarter Of Half Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9a6a9280-0c93-4ff1-93df-468f9e9187b1">
+        <Attribute dwd:design-time-name="38547eb8-2f31-4d2e-aff7-ecd43265e2f0">
           <AttributeID>Half Year Of Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b51f10c7-a7a0-45de-8c93-515f9e7df20a">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3f65a0d3-697a-4d8a-a9e9-7f14587232e7">
+          <AttributeID>Date_Series</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="7c65312d-0961-4203-9145-b7cc614a70aa">
+        <Hierarchy dwd:design-time-name="879c7dd1-e369-4e45-9a30-747a246473be">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="62c0dada-7b6a-4564-8ad8-9d4e5422ff5f">
+        <Hierarchy dwd:design-time-name="cf79d265-d325-4a4f-8188-9131ba32df21">
           <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
@@ -550,15 +552,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dea1b9e1-5c37-4332-a900-45af74adb7ae">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dc85a8c7-68fd-42bc-a738-90014f0bca52">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f4ea2597-36d1-4eab-9680-ad73630ff2e9">
-              <AttributeID>PK Date</AttributeID>
+            <Attribute dwd:design-time-name="0228eae7-75bd-4fc4-b332-d19bb9196799">
+              <AttributeID>Date</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="47d601b9-ab4d-4cd7-b02c-9ad2c764c666">
+                <KeyColumn dwd:design-time-name="7a24a354-a777-4720-9ceb-e501f1f829b3">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="81dbaa7f-d67d-4ebe-8e33-16c4ac460fc3">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="03b2223f-ce15-4853-9d7b-b4d663678f82">
                     <TableID>dbo_DeviceSalesFact</TableID>
                     <ColumnID>FK_Time</ColumnID>
                   </Source>
@@ -624,24 +626,6 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed698909-2763-4f8d-9213-069020311c91">
-          <CubeDimensionID>Time</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="171fea32-9c79-4b1a-9ff9-6902c10d8c71">
-              <AttributeID>PK Date</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="bb67141d-fd0c-497f-871d-58026d5f9c10">
-                  <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c5c9b34-e556-4329-aeb8-64bde54741a2">
-                    <TableID>dbo_DeviceReceiveFact</TableID>
-                    <ColumnID>FK_Time</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
         <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="39689ce6-31be-454b-a9bf-b2576adcbdc0">
           <CubeDimensionID>Locations</CubeDimensionID>
           <Attributes>
@@ -654,6 +638,24 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="6c8a9285-bb12-413b-810b-c9a4277266f0">
                     <TableID>dbo_DeviceReceiveFact</TableID>
                     <ColumnID>FK_DealerCode</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07f77528-4adc-43af-b58e-c91325f25f7a">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d83d504f-8c3a-4dbe-a719-d2dadbc2cd4b">
+              <AttributeID>Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="cc3aa397-1294-446c-bd1d-c7ad753cebcb">
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2c4f8c1-0495-4ebd-b950-ff5083085d6c">
+                    <TableID>dbo_DeviceReceiveFact</TableID>
+                    <ColumnID>FK_Time</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>

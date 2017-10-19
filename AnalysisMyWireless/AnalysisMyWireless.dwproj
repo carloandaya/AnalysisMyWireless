@@ -57,10 +57,6 @@
       <Name>Time.dmm</Name>
       <FullPath>Time.dmm</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Time 1.dmm</Name>
-      <FullPath>Time 1.dmm</FullPath>
-    </ProjectItem>
   </MiningModels>
   <Configurations>
     <Configuration>

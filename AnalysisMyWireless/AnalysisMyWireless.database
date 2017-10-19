@@ -94,6 +94,7 @@
   </DataSourceImpersonationInfo>
   <Dimensions />
   <Cubes />
+  <MiningStructures />
   <DataSources />
   <DataSourceViews />
 </Database>
