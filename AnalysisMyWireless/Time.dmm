@@ -1,12 +1,12 @@
 ﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3d045c9c-4550-4ee2-b75e-f0d1e5acea5e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Time</ID>
   <Name>Time</Name>
-  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
   <Annotations>
     <Annotation>
       <Name>MDXFilterComponent</Name>
-      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Date]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="MDX"&gt;&lt;Text&gt;[Time].[Date_Series].&amp;amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]')&lt;/Text&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition"&gt;&lt;FilterItem&gt;&lt;HierarchyUniqueName&gt;[Time].[Date]&lt;/HierarchyUniqueName&gt;&lt;Condition xsi:type="MDX"&gt;&lt;Text&gt;[Time].[Date_Series].&amp;amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;amp;[' + format(now() - 1, 'yyyy-MM-dd') + 'T00:00:00]')&lt;/Text&gt;&lt;/Condition&gt;&lt;/FilterItem&gt;&lt;/FilterItems&gt;&lt;/Filter&gt;</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -44,13 +44,13 @@
       <Value>100</Value>
     </Annotation>
   </Annotations>
-  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="21ea9def-b96b-4172-8d78-72482d9afb8c">
     <DataSourceID>.</DataSourceID>
     <CubeID>My Wireless Datamart</CubeID>
     <CubeDimensionID>Time</CubeDimensionID>
-    <Filter>( SELECT ( [Time].[Date_Series].&amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;[' + format(now(), 'yyyy-MM-dd') + 'T00:00:00]') ) ON COLUMNS FROM [My Wireless Datamart])</Filter>
+    <Filter>( SELECT ( [Time].[Date_Series].&amp;[2015-01-01T00:00:00] : strtomember('[Time].[Date_Series].&amp;[' + format(now() - 1, 'yyyy-MM-dd') + 'T00:00:00]') ) ON COLUMNS FROM [My Wireless Datamart])</Filter>
   </Source>
   <Columns>
     <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c4e35f68-e2a1-48d4-a6a3-6cea7a32e47d">
@@ -89,9 +89,9 @@
     <MiningModel dwd:design-time-name="6c78a7e7-0df2-42c8-82d2-e6623837cd5e">
       <ID>Time</ID>
       <Name>Time</Name>
-      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
-      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
-      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Algorithm>Microsoft_Time_Series</Algorithm>
       <Columns>
@@ -105,7 +105,6 @@
           <ID>ReceiveQty</ID>
           <Name>ReceiveQty</Name>
           <SourceColumnID>ReceiveQty</SourceColumnID>
-          <Usage>Predict</Usage>
           <ModelingFlags>
             <ModelingFlag>REGRESSOR</ModelingFlag>
           </ModelingFlags>
